@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    // column-gap: 20px;
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.menu{
+    margin-top: 26px;
+}
+ul li:hover{
+    color: #FDA3C4;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media  screen and(max-width: 800px) {
+    ul{
+        font-size: 14px;
+    }
+}

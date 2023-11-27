@@ -1,0 +1,31 @@
+.contacts{
+    display: flex;
+    column-gap: 10px;
+}
+.contacts span{
+    color: #FDA3C4;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+}
+.adress{
+    display: flex;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.location__icon{
+    margin-right: 8px;
+}
+.phone__icon{
+    margin-right: 10px;
+}
+
+@media screen and(max-width: 1000px) {
+    .contacts{
+      flex-direction: column;
+    }
+  }

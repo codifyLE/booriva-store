@@ -1,0 +1,187 @@
+.insta {
+  margin: 60px 0;
+  display: flex;
+  column-gap: 6px;
+}
+
+.insta span {
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.inst__images {
+  align-items: end;
+  margin-top: 38px;
+  display: flex;
+  column-gap: 6px;
+}
+.inst1 {
+  width: 205px;
+  height: 205px;
+}
+.inst1 img {
+  width: 100%;
+  height: auto;
+  // width: 168px;
+  // height: 168px;
+}
+.inst2 {
+  width: 168px;
+  height: 168px;
+}
+.inst2 img {
+  width: 100%;
+  height: auto;
+}
+.insta__items{
+  margin-bottom: 10px;
+}
+.central {
+  display: flex;
+  align-items: end;
+  width: 370px;
+  height: 370px;
+}
+.central img {
+  width: 100%;
+  height: auto;
+}
+.right__images{
+    display: flex;
+    column-gap: 6px;
+    margin-bottom: 60px;
+}
+.right__img1{
+    width: 168px;
+    height: 168px;
+}
+.right__img1 img{
+    width: 100%;
+    height: auto;
+}
+.right__img2{
+    width: 205px;
+    height: 205px;
+}
+.right__img2 img{
+    width: 100%;
+    height: auto;
+}
+.right span{
+    color: #F40000;
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 15px;
+
+}
+.tag span{
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tag{
+    margin-left: 100px;
+    margin-top: 10px;
+    display: flex;
+    width: 280px;
+}
+.central2{
+  display: none;
+}
+@media screen and(max-width: 1100px) {
+  .inst1 {
+    width: 165px;
+    height: 165px;
+  }
+  .inst1 img {
+    width: 100%;
+    height: auto;
+    // width: 168px;
+    // height: 168px;
+  }
+  .inst2 {
+    width: 128px;
+    height: 128px;
+  }
+  .inst2 img {
+    width: 100%;
+    height: auto;
+  }
+  // .insta__items img{
+    
+  // }
+  .right__img1{
+    width: 128px;
+    height: 128px;
+}
+.right__img1 img{
+    width: 100%;
+    height: auto;
+}
+.right__img2{
+    width: 165px;
+    height: 165px;
+}
+.right__img2 img{
+    width: 100%;
+    height: auto;
+}
+}
+@media screen and(max-width: 1000px) {
+  .insta {
+    display: block;
+  }
+  .central{
+    display: none;
+  }
+  .right span{
+    display: none;
+  
+  }
+  .tag span{
+    display: none;
+  }
+  .central2{
+    display: block;
+    width: 362px;
+    height: 407px;
+  }
+  .central2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .instagram{
+    display: flex;
+    justify-content: center;
+  }
+  .central2 h2{
+    color: #F40000;
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 64px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .central2 span{
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .left{
+    margin-bottom: 10px;
+   
+  }
+}

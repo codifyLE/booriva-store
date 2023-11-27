@@ -1,0 +1,24 @@
+header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.image{
+    width: 919px;
+    height: 200px;   
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+header span{
+    color: #FDA3C4;
+    font-family: 'Sunday Best [rus by aLiNcE]';
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+}

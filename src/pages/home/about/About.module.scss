@@ -1,0 +1,134 @@
+.central{
+    margin: auto;
+    max-width: 100%;
+    width: 560px;
+    height: 643px;
+    position: relative;
+    margin-bottom: 180px;
+}
+.central img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about__img{
+    position: absolute;
+    top: 125px;
+    left: -190px;
+    
+}
+.adress span{
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 100%;
+}
+.adress{
+    // display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -235px;
+}
+.description span{
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.description{
+    position: absolute;
+    bottom: 0px;
+    top: 380px;
+    right: -290px;
+}
+@media screen and(max-width: 1185px) {
+    // .central img{
+    //     width: 100%;
+    //     // height: auto;
+    
+    // }
+    .central{
+       margin: auto;
+       margin-bottom: 180px;
+       width: 50%;
+    }
+    // .description{
+    //     position: absolute;
+    //     bottom: 0px;
+    //     top: 380px;
+    //     right: -160px;
+    //     width: 250px;
+    // }
+    // .adress{
+    //     width: 180px;
+    //     left: -205px;
+    // }
+    .about__img{
+        width: 60%;
+        
+    }
+}
+@media screen and(max-width: 1130px) {
+
+    .description{
+        position: absolute;
+        bottom: 0px;
+        top: 380px;
+        right: -260px;
+        width: 250px;
+    }
+    .adress{
+        width: 180px;
+        left: -205px;
+    }
+ 
+}
+@media screen and(max-width: 980px) {
+    .description{
+        position: static;
+        bottom: 0px;
+        top: 380px;
+        right: -160px;
+        width: 300px;
+        margin-top: 15px;
+    }
+    .adress{
+        position: static;
+        width: 280px;
+    }
+    // .central{
+    //     margin-right: 0;
+    //     margin-bottom: 180px;
+    //     width: 80%;
+    //  }
+}
+@media screen and(max-width: 800px) {
+    // .description{
+    //     position: static;
+    //     bottom: 0px;
+    //     top: 380px;
+    //     right: -160px;
+    //     width: 300px;
+    //     margin-top: 15px;
+    // }
+    // .adress{
+    //     position: static;
+    //     width: 280px;
+    // }
+    .central{
+        margin-right: 0;
+        margin-bottom: 180px;
+        width: 70%;
+     }
+    .adress{
+        position: absolute;
+        top: 0;
+        
+        width: 180px;
+    }
+}

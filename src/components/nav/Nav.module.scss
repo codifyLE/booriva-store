@@ -1,0 +1,22 @@
+.Nav {
+  padding: 10px 32px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid #fda3c4;
+  width: 100%;
+  background: #fff;
+}
+.favourites {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  margin-left: 32px;
+}
+.contacts {
+  display: flex;
+}
+.logo{
+  margin: auto;
+
+}
