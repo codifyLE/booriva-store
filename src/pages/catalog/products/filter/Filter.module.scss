@@ -1,0 +1,45 @@
+.filter ul {
+  flex-direction: column;
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.filter{
+    ul li:hover{
+        color: #FDA3C4;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+.filter ul h2 {
+  margin-bottom: 30px;
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.filter ul li {
+  margin-bottom: 15px;
+}
+
+.categories {
+  margin-bottom: 60px;
+  li{
+    list-style-type: none;
+  }
+}
+.price {
+  margin-bottom: 60px;
+}
+.price li {
+  list-style-type: circle;
+}
+.size li {
+  list-style-type: circle;
+}

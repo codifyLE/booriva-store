@@ -1,4 +1,40 @@
-.runline img{
-    width: 100%;
-    // object-fit: cover;
+// .runline img{
+//     height: 100%;
+//     // object-fit: cover;
+// }
+.runline{
+    display: flex;
+    width:100% ;
+    overflow: hidden;
+   .images{
+    display: flex;
+    height: 80px;
+    width: 9080px;
+    animation: runline 6s infinite linear;
+
+   }
+   .images2{
+    display: flex;
+    animation: runline2 6s infinite linear;
+   }
+}
+
+@keyframes runline{
+    0%{
+       transform: translateX(0);
+    }
+
+    100%{
+      transform: translateX(-50%);
+    } 
+
+}
+@keyframes runline2{
+    0%{
+        transform: translateX(-50%);
+     }
+ 
+     100%{
+       transform: translateX(0);
+     } 
 }

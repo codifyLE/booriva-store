@@ -1,42 +1,13 @@
-.card{
+.cards{
     display: flex;
-    column-gap: 21px;
-}
-.filter ul{
-    flex-direction: column;
-    color: #1F1F1F;
-font-family: 'Montserrat';
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-}
-.filter ul h2{
-    margin-bottom: 30px;
-    color: #1F1F1F;
-font-family: 'Montserrat';
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-}
-.filter ul li{
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    max-width: 919px;
+    gap: 72px;
 }
 .products{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-}
-.categories{
-    margin-bottom: 60px;
-}
-.price{
-    margin-bottom: 60px;
-}
-.price li{
-    list-style-type: circle;
-}
-.size li{
-    list-style-type: circle;
 }
 .first .card{
     width: 466px;

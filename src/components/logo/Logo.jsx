@@ -1,9 +1,10 @@
 // import logo from './../../assets/img/svg/Logo.svg'
+import { Link } from 'react-router-dom';
 import styles from './Logo.module.scss'
 
 const Logo = () => {
     return(
-        <div className={styles.logo}>
+        <Link to="/" className={styles.logo}>
            <svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="logo">
 <g id="Group">
@@ -48,9 +49,8 @@ const Logo = () => {
 </g>
 </g>
 </g>
-</svg>
-
-        </div>
+           </svg>
+        </Link>
     )
 }
 

@@ -42,9 +42,10 @@
 }
 .description{
     position: absolute;
+    width: 230px;
     bottom: 0px;
     top: 380px;
-    right: -290px;
+    right: -250px;
 }
 @media screen and(max-width: 1185px) {
     // .central img{
@@ -88,7 +89,21 @@
     }
  
 }
-@media screen and(max-width: 980px) {
+@media screen and(max-width: 990px) {
+    .description{
+
+        width: 200px;
+        right: -220px;
+
+    }
+  
+    // .central{
+    //     margin-right: 0;
+    //     margin-bottom: 180px;
+    //     width: 80%;
+    //  }
+}
+@media screen and(max-width: 850px) {
     .description{
         position: static;
         bottom: 0px;
@@ -96,26 +111,8 @@
         right: -160px;
         width: 300px;
         margin-top: 15px;
+        margin-left: 150px;
     }
-    .adress{
-        position: static;
-        width: 280px;
-    }
-    // .central{
-    //     margin-right: 0;
-    //     margin-bottom: 180px;
-    //     width: 80%;
-    //  }
-}
-@media screen and(max-width: 800px) {
-    // .description{
-    //     position: static;
-    //     bottom: 0px;
-    //     top: 380px;
-    //     right: -160px;
-    //     width: 300px;
-    //     margin-top: 15px;
-    // }
     // .adress{
     //     position: static;
     //     width: 280px;
@@ -127,8 +124,16 @@
      }
     .adress{
         position: absolute;
-        top: 0;
+        bottom: 40px;
         
-        width: 180px;
+        width: 200px;
+    }
+}
+@media screen and(max-width: 720px) {
+    // .central{
+    //     width: 60%;
+    // }
+    .description{
+        margin-left: 100px;
     }
 }

@@ -12,7 +12,7 @@ const Catalog = () => {
     return(
         <div className='container'>
             <Nav />
-            <ClothesMenu />
+            {/* <ClothesMenu /> */}
             <Header />
             <Products />
             <Insta />

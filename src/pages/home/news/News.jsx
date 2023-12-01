@@ -1,5 +1,6 @@
 import styles from "./News.module.scss";
 import Card from "../../../components/card/Card";
+import { Link } from "react-router-dom";
 
 import title from "./../../../assets/img/svg/Заголовок 1 новинки.svg";
 import cardImage from "./../../../assets/img/png/cardImg.png";
@@ -17,38 +18,40 @@ const News = () => {
         </div>
       </section>
       <div className={styles.cards}>
+        <Link to="/CardProduct" style={{ textDecoration: "none" }}>
+          <Card
+            subtitle="Cвитшот вставка клетка"
+            price="1 099 ₴"
+            image={cardImage}
+          />
+        </Link>
 
-    <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage}
-        />
+        <Link to="/CardProduct" style={{ textDecoration: "none" }}>
+          {" "}
+          <Card
+            subtitle="Cвитшот вставка клетка"
+            price="1 099 ₴"
+            image={cardImage2}
+          />
+        </Link>
 
+        <Link to="/CardProduct" style={{ textDecoration: "none" }}>
+          <Card
+            subtitle="Cвитшот вставка клетка"
+            price="1 099 ₴"
+            image={cardImage3}
+          />
+        </Link>
 
-    <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage2}
-        />
-
-  
-     <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage3}
-        />
- 
-
-
-    <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage4}
-        />
-  
-        
+        <Link to="/CardProduct" style={{ textDecoration: "none" }}>
+          <Card
+            subtitle="Cвитшот вставка клетка"
+            price="1 099 ₴"
+            image={cardImage4}
+          />
+        </Link>
       </div>
-      <Button/>
+      <Button />
     </div>
   );
 };

@@ -10,21 +10,22 @@ const Nav = () => {
   return (
     <div className="container container_nav">
       <div className={styles.Nav}>
-       <section>
-       <div className={styles.contacts}>
-          <Contacts />
-          <div className={styles.logo}> <Logo />
+        <section>
+          <div className={styles.contacts}>
+            <Contacts />
+            <div className={styles.logo}>
+              <Logo />
+            </div>
+            <Search />   
+            <div className={styles.favourites}>
+              <Favourites />
+              <Basket />
+            </div>
           </div>
-         <Search />
-          <div className={styles.favourites}>
-            <Favourites />
-            <Basket />
+          <div className={styles.menu}>
+            <Menu />
           </div>
-        </div>
-        <div className={styles.menu}>
-          <Menu />
-        </div>
-       </section>
+        </section>
       </div>
     </div>
   );

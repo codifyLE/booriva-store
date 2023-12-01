@@ -1,14 +1,27 @@
 
 button{
+    position: relative;
+    cursor: pointer;
     border: none;
     background: transparent;
     margin: 0 auto;
     display: block;
     margin-top: 25px;
+    span{
+        position: absolute;
+        left: 29px;
+        top: 10px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Sunday Best [rus by aLiNcE]';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 }
-// .btn:hover svg path{
-//     fill: #F40000;
-// }
-// .btn:hover svg path{
-//     fill: #F40000;
-// }
+.btn:hover svg path{
+    transition: all 0.3s;
+    fill: #F40000;
+}
