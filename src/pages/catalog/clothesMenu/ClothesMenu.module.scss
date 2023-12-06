@@ -1,27 +1,27 @@
-.clothes{
-    margin-top: 130px;
-    border-bottom: 1px solid  #909090;
-    padding: 14px 90px;
-    li{
-        cursor: pointer;
-    }
-    ul{
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-    }
+.clothes {
+  margin-top: 130px;
+  border-bottom: 1px solid #909090;
+  padding: 14px 90px;
+  li {
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
 }
-.clothes ul li{
-    color: #1F1F1F;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+.clothes ul li {
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
-.clothes ul li:hover{
-    color: #FDA3C4;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 400;
+.clothes ul li:hover {
+  color: #fda3c4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
 }

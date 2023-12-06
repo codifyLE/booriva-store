@@ -15,10 +15,21 @@ header{
     object-fit: cover;
     object-position: 0% 70%;
 }
-header span{
+header h2{
+    position: relative;
     color: #FDA3C4;
     font-family: 'Sunday Best [rus by aLiNcE]';
     font-size: 54px;
     font-style: normal;
     font-weight: 400;
+}
+header span{
+    position: absolute;
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }

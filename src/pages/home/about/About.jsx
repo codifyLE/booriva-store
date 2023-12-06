@@ -3,7 +3,6 @@ import styles from "./About.module.scss";
 import aboutImg from "./../../../assets/img/png/about__img.png";
 import bvShop from "./../../../assets/img/svg/BOORIVA STORE.svg";
 
-
 const About = () => {
   return (
     <div className="container">
@@ -20,8 +19,9 @@ const About = () => {
             </span>
           </div>
           <div className={styles.description}>
-          <span>
-              Ты можешь заказать примерку понравившейся вещи или просто заглянуть, гуляя по Подолу, и примерять что-то из в наличии
+            <span>
+              Ты можешь заказать примерку понравившейся вещи или просто
+              заглянуть, гуляя по Подолу, и примерять что-то из в наличии
             </span>
           </div>
         </div>

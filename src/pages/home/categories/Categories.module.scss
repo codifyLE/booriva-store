@@ -48,10 +48,6 @@
   height: 296px;
   object-fit: cover;
 }
-.images__left {
-  width: 563px;
-  height: 345px;
-}
 @media screen and(max-width: 1000px) {
   .images {
     margin-top: 135px;
@@ -123,24 +119,24 @@
     height: 54px;
   }
 }
-.small4{
+.small4 {
   position: relative;
 }
-.costume{
+.costume {
   position: absolute;
   bottom: 15px;
   right: 12px;
-  img{
+  img {
     width: 184px;
     height: 53px;
   }
 }
 
-.hudi{
+.hudi {
   position: absolute;
   bottom: 15px;
   left: 56px;
-  img{
+  img {
     width: 133px;
     height: 94px;
   }
@@ -150,11 +146,10 @@
   opacity: 1;
 }
 
-.img__big:hover img{
+.img__big:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
-
 }
 .small1 {
   background: black;
@@ -162,7 +157,7 @@
   opacity: 1;
 }
 
-.small1:hover img{
+.small1:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
@@ -173,7 +168,7 @@
   opacity: 1;
 }
 
-.small2:hover img{
+.small2:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
@@ -183,7 +178,7 @@
   opacity: 1;
 }
 
-.small3:hover img{
+.small3:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
@@ -193,7 +188,7 @@
   opacity: 1;
 }
 
-.small4:hover img{
+.small4:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
@@ -203,14 +198,14 @@
   opacity: 1;
 }
 
-.right__big:hover img{
+.right__big:hover img {
   transition: all 0.3s;
   opacity: 0.5;
   cursor: pointer;
 }
 @media screen and(max-width: 800px) {
   .images {
-    margin-top: 135px;
+    margin-top: 90px;
     display: flex;
     column-gap: 8px;
   }
@@ -223,5 +218,96 @@
   .right__small {
     column-gap: 8px;
   }
+}
+@media screen and(max-width: 500px) {
+  .images__left {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 8px;
+  }
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img__small {
+    flex-direction: column;
+    height: 180px;
+  }
+  .img__small img {
+    max-width: 100%;
+    width: 170px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .small1 {
+    margin-bottom: 8px;
+    height: 180px;
+  }
+  .small2 {
+    height: 180px;
+  }
+  .img__big {
+    position: relative;
+    display: flex;
+    height: 365px;
+    margin-bottom: 0;
+  }
+  .img__big img {
+    max-width: 100%;
+    width: 272px;
+    height: 365px;
+    object-fit: cover;
+  }
+  .tshirt {
+    display: none;
+  }
+  .niz {
+    display: none;
+  }
+  .verh {
+    display: none;
+  }
 
+  .images__right {
+    display: flex;
+    column-gap: 8px;
+  }
+  .right__big {
+    position: relative;
+    height: 365px;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .right__big img {
+    max-width: 100%;
+    width: 272px;
+    height: 365px;
+    object-fit: cover;
+  }
+  .hudi {
+    display: none;
+  }
+  .right__small {
+    flex-direction: column;
+    height: 180px;
+  }
+  .right__small img {
+    max-width: 100%;
+    width: 170px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .dress {
+    display: none;
+  }
+  .costume {
+    display: none;
+  }
+  .small3 {
+    height: 180px;
+    margin-bottom: 8px;
+  }
+  .small4 {
+    height: 180px;
+  }
 }

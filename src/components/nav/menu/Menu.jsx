@@ -1,18 +1,21 @@
+import { useEffect, useState } from 'react'
 import styles from './Menu.module.scss'
 import { Link } from 'react-router-dom'
 
 const Menu = () => {
+    const [menu, setMenu] = useState([])
+    useEffect(() => {
+        fetch('https://640ef1d54ed25579dc40e2a6.mockapi.io/menu')
+        .then((res) => res.json())
+        .then((data) => setMenu(data))  
+        .catch((rej) => rej.json())
+    }, [])
     return(
          <div className={styles.menu}>
             <ul>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Новинки</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Платья</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Верх</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Низ</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Куртки</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Мелочи</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>Костюмы</li> </Link>
-                <Link  to='/catalog' style={{textDecoration: 'none'}}> <li>#Boorivagirls</li> </Link>
+                {
+                    menu.map(({id, name}) => <Link  to='/catalog' style={{textDecoration: 'none'}} key={id}> <li>{name}</li> </Link>)
+                }
             </ul>
         </div>
     )

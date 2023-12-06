@@ -1,139 +1,124 @@
-.central{
-    margin: auto;
-    max-width: 100%;
-    width: 560px;
-    height: 643px;
-    position: relative;
-    margin-bottom: 180px;
+.central {
+  margin: auto;
+  max-width: 100%;
+  width: 560px;
+  height: 643px;
+  position: relative;
+  margin-bottom: 180px;
 }
-.central img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.central img {
+  width: 100%;
+  // height: auto;
+  object-fit: cover;
 }
-.about__img{
-    position: absolute;
-    top: 125px;
-    left: -190px;
-    
+.about__img {
+  position: absolute;
+  top: 125px;
+  left: -190px;
 }
-.adress span{
-    color: #1F1F1F;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    width: 100%;
+.adress span {
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
 }
-.adress{
-    // display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: -235px;
+.adress {
+  position: absolute;
+  bottom: 0;
+  left: -235px;
 }
-.description span{
-    color: #1F1F1F;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+.description span {
+  color: #1f1f1f;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
-.description{
-    position: absolute;
-    width: 230px;
-    bottom: 0px;
-    top: 380px;
-    right: -250px;
+.description {
+  position: absolute;
+  width: 230px;
+  bottom: 0px;
+  top: 380px;
+  right: -250px;
 }
 @media screen and(max-width: 1185px) {
-    // .central img{
-    //     width: 100%;
-    //     // height: auto;
-    
-    // }
-    .central{
-       margin: auto;
-       margin-bottom: 180px;
-       width: 50%;
-    }
-    // .description{
-    //     position: absolute;
-    //     bottom: 0px;
-    //     top: 380px;
-    //     right: -160px;
-    //     width: 250px;
-    // }
-    // .adress{
-    //     width: 180px;
-    //     left: -205px;
-    // }
-    .about__img{
-        width: 60%;
-        
-    }
+  .central {
+    margin: auto;
+    margin-bottom: 180px;
+    width: 50%;
+  }
+  .about__img {
+    width: 60%;
+  }
 }
 @media screen and(max-width: 1130px) {
-
-    .description{
-        position: absolute;
-        bottom: 0px;
-        top: 380px;
-        right: -260px;
-        width: 250px;
-    }
-    .adress{
-        width: 180px;
-        left: -205px;
-    }
- 
+  .description {
+    position: absolute;
+    bottom: 0px;
+    top: 380px;
+    right: -260px;
+    width: 250px;
+  }
+  .adress {
+    width: 180px;
+    left: -205px;
+  }
 }
 @media screen and(max-width: 990px) {
-    .description{
-
-        width: 200px;
-        right: -220px;
-
-    }
-  
-    // .central{
-    //     margin-right: 0;
-    //     margin-bottom: 180px;
-    //     width: 80%;
-    //  }
+  .description {
+    width: 200px;
+    right: -220px;
+  }
 }
 @media screen and(max-width: 850px) {
-    .description{
-        position: static;
-        bottom: 0px;
-        top: 380px;
-        right: -160px;
-        width: 300px;
-        margin-top: 15px;
-        margin-left: 150px;
-    }
-    // .adress{
-    //     position: static;
-    //     width: 280px;
-    // }
-    .central{
-        margin-right: 0;
-        margin-bottom: 180px;
-        width: 70%;
-     }
-    .adress{
-        position: absolute;
-        bottom: 40px;
-        
-        width: 200px;
-    }
+  .description {
+    position: static;
+    bottom: 0px;
+    top: 380px;
+    right: -160px;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 150px;
+  }
+  .central {
+    margin-right: 0;
+    margin-bottom: 180px;
+    width: 70%;
+  }
+  .adress {
+    position: absolute;
+    bottom: 40px;
+
+    width: 200px;
+  }
 }
 @media screen and(max-width: 720px) {
-    // .central{
-    //     width: 60%;
-    // }
-    .description{
-        margin-left: 100px;
-    }
+  .description {
+    margin-left: 100px;
+  }
+  .description span {
+    font-size: 12px;
+  }
+  .adress span {
+    font-size: 12px;
+  }
+}
+@media screen and(max-width: 720px) {
+  .description {
+    margin: auto;
+    width: 100%;
+  }
+  .adress {
+    width: 100%;
+    position: static;
+    margin: auto;
+  }
+  .central {
+    margin-bottom: 80px;
+    width: 80%;
+  }
 }

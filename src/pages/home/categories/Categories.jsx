@@ -22,46 +22,62 @@ const Categories = () => {
         <div className={styles.images}>
           <div className={styles.images__left}>
             <div className={styles.img__big}>
-              <Link to="/catalog"><img src={bigImg} alt="" /></Link>
+              <Link to="/catalog">
+                <img src={bigImg} alt="" />
+              </Link>
               <div className={styles.tshirt}>
                 <img src={tshirt} alt="" />
               </div>
             </div>
             <div className={styles.img__small}>
               <div className={styles.small1}>
-               <Link to="/catalog"> <img src={smallImg} alt="" /></Link>
+                <Link to="/catalog">
+                  {" "}
+                  <img src={smallImg} alt="" />
+                </Link>
                 <div className={styles.niz}>
-                   <img src={niz} alt="" />
-                  </div>
+                  <img src={niz} alt="" />
+                </div>
               </div>
               <div className={styles.small2}>
-               <Link to="/catalog"> <img src={smallImg2} alt="" /></Link>
+                <Link to="/catalog">
+                  {" "}
+                  <img src={smallImg2} alt="" />
+                </Link>
                 <div className={styles.verh}>
-                   <img src={verh} alt="" />
-                  </div>
+                  <img src={verh} alt="" />
+                </div>
               </div>
             </div>
           </div>
           <div className={styles.images__right}>
             <div className={styles.right__small}>
               <div className={styles.small3}>
-                <Link to="/catalog"><img src={smallImg3} alt="" /></Link>
+                <Link to="/catalog">
+                  <img src={smallImg3} alt="" />
+                </Link>
                 <div className={styles.dress}>
                   <img src={dress} alt="" />
                 </div>
               </div>
               <div className={styles.small4}>
-               <Link to="/catalog"> <img src={smallImg4} alt="" /></Link>
+                <Link to="/catalog">
+                  {" "}
+                  <img src={smallImg4} alt="" />
+                </Link>
                 <div className={styles.costume}>
                   <img src={costume} alt="" />
                 </div>
               </div>
             </div>
             <div className={styles.right__big}>
-             <Link to="/catalog"> <img src={bigImg2} alt="" /></Link>
+              <Link to="/catalog">
+                {" "}
+                <img src={bigImg2} alt="" />
+              </Link>
               <div className={styles.hudi}>
-                  <img src={hudi} alt="" />
-                </div>
+                <img src={hudi} alt="" />
+              </div>
             </div>
           </div>
         </div>

@@ -1,40 +1,29 @@
-// .runline img{
-//     height: 100%;
-//     // object-fit: cover;
-// }
-.runline{
+.runline {
+  margin-top: 160px;
+  max-width: 100%;
+  overflow: hidden;
+  div {
     display: flex;
-    width:100% ;
-    overflow: hidden;
-   .images{
-    display: flex;
-    height: 80px;
-    width: 9080px;
-    animation: runline 6s infinite linear;
-
-   }
-   .images2{
-    display: flex;
-    animation: runline2 6s infinite linear;
-   }
+    width: 100%;
+    animation: runline 5s linear infinite;
+  }
+  img {
+    white-space: nowrap;
+    width: 100%;
+  }
 }
 
-@keyframes runline{
-    0%{
-       transform: translateX(0);
-    }
+@keyframes runline {
+  0% {
+    transform: translateX(0%);
+  }
 
-    100%{
-      transform: translateX(-50%);
-    } 
-
+  100% {
+    transform: translateX(-50%);
+  }
 }
-@keyframes runline2{
-    0%{
-        transform: translateX(-50%);
-     }
- 
-     100%{
-       transform: translateX(0);
-     } 
+@media screen and(max-width: 650px) {
+  .runline {
+    margin-top: 0;
+  }
 }

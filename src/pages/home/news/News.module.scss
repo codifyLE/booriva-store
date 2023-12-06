@@ -1,49 +1,26 @@
-.news{
-    margin-top: 60px;
-    margin-bottom: 26px;
+.news {
+  margin-top: 60px;
+  margin-bottom: 26px;
 }
-.cards{
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  column-gap: 20px;
+  width: 100%;
+  padding: 0 32px;
+}
+@media screen and(max-width: 1100px) {
+  .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
+    gap: 72px;
     align-items: end;
     column-gap: 20px;
     width: 100%;
     padding: 0 32px;
-   
-
+  }
 }
-// .title span{
-//     color: #FDA3C4;
-//     font-family: 'Sunday Best [rus by aLiNcE]';
-//     font-size: 54px;
-//     font-style: normal;
-//     font-weight: 400;
-//     text-transform: uppercase;      
-// }
-// .subtitle span{
-//     color: #1F1F1F;
-//     font-family: 'Montserrat';
-//     font-size: 25px;
-//     font-style: normal;
-//     font-weight: 600;
-//     text-transform: uppercase;
-// }
-// .subtitle{
-//     display: flex;
-//     column-gap: 17px;
-//     position: relative;
-//     top: 70px;
-// }
-
-// .title{
-//     position: absolute;
-// }
-
-
-// @media screen and(max-width: 1300px) {
-
-//     .last{
-//        width: 100%;
-//        height: auto;
-//     }
-// }

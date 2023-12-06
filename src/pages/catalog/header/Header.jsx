@@ -1,20 +1,21 @@
-import styles from './Header.module.scss'
+import styles from "./Header.module.scss";
 
-import header from './../../../assets/img/png/catalogHeadr.png'
+import header from "./../../../assets/img/png/catalogHeadr.png";
 
 const Header = () => {
-    return(
-        <div className='container'>
-            <section>
-                <header>
-                    <span>ВЕРХ</span>
-                   <div className={styles.image}>
-                   <img src={header} alt="" />
-                   </div>
-                </header>
-            </section>
-        </div>
-    )
-}
+  return (
+    <div className="container">
+      <section>
+        <header>
+          <h2>ВЕРХ</h2>
+          <span>ТОПЫ</span>
+          <div className={styles.image}>
+            <img src={header} alt="" />
+          </div>
+        </header>
+      </section>
+    </div>
+  );
+};
 
 export default Header;

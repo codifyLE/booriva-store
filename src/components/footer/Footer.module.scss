@@ -122,3 +122,19 @@ footer{
     flex-direction: column;
   }
 }
+@media screen and(max-width: 760px) {
+  footer{
+    padding: 20px 60px;
+  }
+}
+@media screen and(max-width: 560px) {
+  .items{
+    flex-direction: column;
+  }
+  .info{
+    margin-bottom: 20px;
+  }
+  .adress{
+    margin-bottom: 20px;
+  }
+}
