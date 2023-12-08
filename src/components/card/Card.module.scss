@@ -1,4 +1,7 @@
-
+.cards{
+    display: flex;
+    column-gap: 5px;
+}
 .subtitle{
     color: #1F1F1F;
     font-family: 'Montserrat';
@@ -33,7 +36,7 @@
     }
   
 }
-@media screen and(max-width: 1700px) {
+@media screen and(max-width: 1800px) {
     
 .card {
    width: 100%;
