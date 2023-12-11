@@ -1,43 +1,78 @@
+.menu {
+  margin-top: 26px;
+  li {
+    color: #1f1f1f;
+    cursor: pointer;
+  }
+  &:hover {
+    .clothes {
+      transition: all 0.9s;
+      display: block;
+    }
+  }
+  ul li:hover {
+    color: #fda3c4;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 
-.menu{
-    margin-top: 26px;
-    li{
-        color: #1F1F1F;
-        cursor: pointer;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    // column-gap: 20px;
+    color: #1f1f1f;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .clothes {
+    margin-top: 20px;
+    border-bottom: 1px solid #909090;
+    padding: 14px 90px;
+    li {
+      cursor: pointer;
     }
-    ul li:hover{
-        color: #FDA3C4;
-        font-family: 'Montserrat';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-transform: uppercase;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
     }
-    ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        // column-gap: 20px;
-        color: #1F1F1F;
-        font-family: 'Montserrat';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        text-transform: uppercase;
-    
-    }
+  }
+  .clothes ul li {
+    color: #1f1f1f;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .clothes ul li:hover {
+    color: #fda3c4;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .clothes {
+    display: none;
+  }
 }
 
-@media  screen and(max-width: 820px) {
-    .menu{
-        ul{
-            font-size: 14px;
-        }
+@media screen and(max-width: 820px) {
+  .menu {
+    ul {
+      font-size: 14px;
     }
+  }
 }
-@media  screen and(max-width: 750px) {
-    .menu{
-        display: none;
-    }
+@media screen and(max-width: 750px) {
+  .menu {
+    display: none;
+  }
 }

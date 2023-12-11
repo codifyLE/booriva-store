@@ -138,5 +138,30 @@
   margin-top: 20px;
   display: flex;
   column-gap: 20px;
+
   justify-content: center;
+}
+@media screen and(max-width: 1800px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
+    gap: 72px;
+    align-items: end;
+    column-gap: 20px;
+    width: 100%;
+    padding: 0 32px;
+  }
+}
+@media screen and(max-width: 900px) {
+  .orders {
+    flex-direction: column;
+  }
+  .sizes {
+    flex-wrap: wrap;
+    max-width: 300px;
+    gap: 22px;
+  }
 }
