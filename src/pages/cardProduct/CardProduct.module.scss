@@ -6,11 +6,17 @@
   button {
     margin: 0;
   }
+  .images{
+    display: flex;
+  }
   .btn {
     margin: 20px 0 30px 0;
   }
   .card {
     margin-right: 50px;
+  }
+  .title{
+    width: 80%;
   }
   h2 {
     color: #000;
@@ -141,7 +147,7 @@
 
   justify-content: center;
 }
-@media screen and(max-width: 1800px) {
+@media screen and(max-width: 1200px) {
   .cards {
     display: flex;
     justify-content: center;
@@ -155,7 +161,7 @@
     padding: 0 32px;
   }
 }
-@media screen and(max-width: 900px) {
+@media screen and(max-width: 950px) {
   .orders {
     flex-direction: column;
   }

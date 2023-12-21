@@ -1,7 +1,8 @@
 header{
-    margin-top: 120px;
+    position:  relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    margin-top: 120px;
     align-items: end;
 }
 
@@ -16,7 +17,8 @@ header{
     object-position: 0% 70%;
 }
 header h2{
-    position: relative;
+    position: absolute;
+    left: 0;
     color: #FDA3C4;
     font-family: 'Sunday Best [rus by aLiNcE]';
     font-size: 54px;

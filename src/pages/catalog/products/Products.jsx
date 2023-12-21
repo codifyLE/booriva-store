@@ -1,35 +1,31 @@
 import { Link } from "react-router-dom";
-import styles from "./Products.module.scss";
+import qs from "qs";
 
 import Filter from "./../products/filter/Filter";
 
 import Card from "./../../../components/card/Card";
-import cardImage from "./../../../assets/img/png/cardImg.png";
-import { useEffect, useState } from "react";
+import styles from "./Products.module.scss";
 
-const Products = () => {
-  const [product, setProduct] = useState([]);
-  useEffect(() => {
-    fetch("https://6569c6cede53105b0dd7a33a.mockapi.io/product")
-      .then((res) => res.json())
-      .then((data) => setProduct(data))
-      .catch((rej) => rej.json());
-  }, []);
+const Products = ({ products }) => {
   return (
     <div className="container">
       <section>
         <div className={styles.products}>
           <Filter />
           <div className={styles.cards}>
-            {product.map(({ id, name, price, images }) => (
-              <Link
-                to="/CardProduct"
-                style={{ textDecoration: "none" }}
-                key={id}
-              >
-                <Card subtitle={name} price={price} image={images[0]} />
-              </Link>
-            ))}
+            {products.length > 0 ? (
+              products.map(({ id, name, price, images }) => (
+                <Link
+                  to="/CardProduct"
+                  style={{ textDecoration: "none" }}
+                  key={id}
+                >
+                  <Card subtitle={name} price={price} image={images[0]} />
+                </Link>
+              ))
+            ) : (
+              <h2>товар не найден</h2>
+            )}
           </div>
         </div>
       </section>

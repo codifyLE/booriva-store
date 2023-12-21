@@ -23,7 +23,7 @@ const Categories = () => {
           <div className={styles.images__left}>
             <div className={styles.img__big}>
               <Link to="/catalog">
-                <img src={bigImg} alt="" />
+                <img src={bigImg} alt="" className={styles.img1}/>
               </Link>
               <div className={styles.tshirt}>
                 <img src={tshirt} alt="" />
@@ -33,7 +33,7 @@ const Categories = () => {
               <div className={styles.small1}>
                 <Link to="/catalog">
                   {" "}
-                  <img src={smallImg} alt="" />
+                  <img src={smallImg} alt="" className={styles.img2}/>
                 </Link>
                 <div className={styles.niz}>
                   <img src={niz} alt="" />
@@ -42,7 +42,7 @@ const Categories = () => {
               <div className={styles.small2}>
                 <Link to="/catalog">
                   {" "}
-                  <img src={smallImg2} alt="" />
+                  <img src={smallImg2} alt=""  className={styles.img3}/>
                 </Link>
                 <div className={styles.verh}>
                   <img src={verh} alt="" />
@@ -54,7 +54,7 @@ const Categories = () => {
             <div className={styles.right__small}>
               <div className={styles.small3}>
                 <Link to="/catalog">
-                  <img src={smallImg3} alt="" />
+                  <img src={smallImg3} alt="" className={styles.img4}/>
                 </Link>
                 <div className={styles.dress}>
                   <img src={dress} alt="" />
@@ -63,7 +63,7 @@ const Categories = () => {
               <div className={styles.small4}>
                 <Link to="/catalog">
                   {" "}
-                  <img src={smallImg4} alt="" />
+                  <img src={smallImg4} alt="" className={styles.img5}/>
                 </Link>
                 <div className={styles.costume}>
                   <img src={costume} alt="" />
@@ -73,7 +73,7 @@ const Categories = () => {
             <div className={styles.right__big}>
               <Link to="/catalog">
                 {" "}
-                <img src={bigImg2} alt="" />
+                <img src={bigImg2} alt="" className={styles.img6}/>
               </Link>
               <div className={styles.hudi}>
                 <img src={hudi} alt="" />

@@ -4,32 +4,47 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
+  const [menuId, setMenuId] = useState([]);
   useEffect(() => {
     fetch("https://640ef1d54ed25579dc40e2a6.mockapi.io/menu")
       .then((res) => res.json())
       .then((data) => setMenu(data))
       .catch((rej) => rej.json());
   }, []);
+  const handleMouseOver = (id) => {
+    fetch(`https://640ef1d54ed25579dc40e2a6.mockapi.io/categories/a${id}`)
+      .then((res) => res.json())
+      .then((data) => setMenuId(data.categories));
+  };
   return (
     <div className={styles.menu}>
-      <ul>
-        {menu.map(({ id, name }) => (
-          <Link to="/catalog" style={{ textDecoration: "none" }} key={id}>
-            {" "}
-            <li>{name}</li>{" "}
-          </Link>
-        ))}
-      </ul>
-      <div className={styles.clothes}>
+      <div>
         <ul>
-          <li>Комбинезоны</li>
-          <li>Пиджаки</li>
-          <li>Рубашки</li>
-          <li>Свитшоты</li>
-          <li>Худи</li>
-          <li>Топы</li>
-          <li>Футболки</li>
+          {menu.map(({ id, name }) => (
+            <Link
+              to={`/catalog?menuId=${id}`}
+              style={{ textDecoration: "none" }}
+              key={id}
+            >
+              <li onMouseOver={() => handleMouseOver(id)}>{name}</li>
+            </Link>
+          ))}
         </ul>
+      </div>
+      <div className={styles.clothes}>
+        {menuId && menuId.length > 0 && (
+          <ul>
+            {menuId.map(({ id, name }) => (
+              <Link
+                to={`/catalog?categories=${id}`}
+                key={id}
+                style={{ textDecoration: "none" }}
+              >
+                <li>{name}</li>
+              </Link>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

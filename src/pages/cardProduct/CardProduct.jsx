@@ -9,6 +9,10 @@ import cardImage from "./../../assets/img/png/cardImg.png";
 import icon from "./../../assets/img/svg/ord1.svg";
 import icon2 from "./../../assets/img/svg/ord2.svg";
 import icon3 from "./../../assets/img/svg/ord3.svg";
+import side from './../../assets/img/png/side.png'
+import front from './../../assets/img/png/front.png'
+import front2 from './../../assets/img/png/front2.png'
+import back from './../../assets/img/png/back.png'
 
 const CardProduct = () => {
   return (
@@ -16,6 +20,13 @@ const CardProduct = () => {
       <Nav />
       <section>
         <div className={styles.wrap}>
+       <div className={styles.images}>
+       <div className={styles.card__small}>
+            <img src={side} alt="" />
+            <img src={front} alt="" />
+            <img src={front2} alt="" />
+            <img src={back} alt="" />
+          </div>
           <div className={styles.card}>
             <Card
               subtitle="Cвитшот вставка клетка"
@@ -23,6 +34,7 @@ const CardProduct = () => {
               image={cardImage}
             />
           </div>
+       </div>
           <div className={styles.title}>
             <div className={styles.subtitle}>
               <h2>Бомбер Gone Crazy хаки</h2>

@@ -9,7 +9,7 @@
   object-fit: cover;
 }
 .images {
-  margin-top: 135px;
+  margin-top: 125px;
   display: flex;
   column-gap: 15px;
 }
@@ -50,7 +50,7 @@
 }
 @media screen and(max-width: 1000px) {
   .images {
-    margin-top: 135px;
+    margin-top: 125px;
     display: flex;
     column-gap: 10px;
   }
@@ -78,11 +78,11 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+  
   img {
     width: 205px;
     height: 51px;
-  }
-}
+}}
 .niz {
   position: absolute;
   bottom: 20px;
@@ -144,68 +144,71 @@
 .img__big {
   background: black;
   opacity: 1;
+  .img1:hover{
+    transition: all 0.3s;
+      opacity: 0.5;
+      cursor: pointer;
+  }
 }
 
-.img__big:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
-}
+// .img__big:hover img{
+//   transition: all 0.3s;
+//   opacity: 0.5;
+//   cursor: pointer;
+// }
 .small1 {
   background: black;
   height: 296px;
   opacity: 1;
-}
-
-.small1:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
+  .img2:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 .small2 {
   background: black;
   height: 296px;
   opacity: 1;
-}
-
-.small2:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
+  .img3:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
 }
 .small3 {
   background: black;
   opacity: 1;
+  .img4:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 
-.small3:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
-}
+
 .small4 {
   background: black;
   opacity: 1;
-}
-
-.small4:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
+  .img5:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 .right__big {
   background: black;
   opacity: 1;
-}
-
-.right__big:hover img {
-  transition: all 0.3s;
-  opacity: 0.5;
-  cursor: pointer;
+  .img6:hover{
+    transition: all 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 @media screen and(max-width: 800px) {
   .images {
-    margin-top: 90px;
+    margin-top: 125px;
     display: flex;
     column-gap: 8px;
   }
@@ -219,7 +222,14 @@
     column-gap: 8px;
   }
 }
-@media screen and(max-width: 500px) {
+@media screen and(max-width: 750px) {
+  .images {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 8px;
+  }
+}
+@media screen and(max-width: 600px) {
   .images__left {
     display: flex;
     column-gap: 8px;
@@ -258,15 +268,7 @@
     height: 365px;
     object-fit: cover;
   }
-  .tshirt {
-    display: none;
-  }
-  .niz {
-    display: none;
-  }
-  .verh {
-    display: none;
-  }
+
 
   .images__right {
     display: flex;
@@ -284,9 +286,6 @@
     height: 365px;
     object-fit: cover;
   }
-  .hudi {
-    display: none;
-  }
   .right__small {
     flex-direction: column;
     height: 180px;
@@ -297,17 +296,29 @@
     height: 180px;
     object-fit: cover;
   }
-  .dress {
-    display: none;
-  }
-  .costume {
-    display: none;
-  }
   .small3 {
     height: 180px;
     margin-bottom: 8px;
   }
   .small4 {
     height: 180px;
+  }
+    .tshirt {
+    display: none;
+  }
+  .niz {
+    display: none;
+  }
+  .verh {
+    display: none;
+  }
+  .hudi {
+    display: none;
+  }
+  .dress {
+    display: none;
+  }
+  .costume {
+    display: none;
   }
 }
