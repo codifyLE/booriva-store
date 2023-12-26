@@ -7,10 +7,12 @@ import About from "./about/About";
 import Top from "./top/Top";
 import Insta from "./insta/Insta";
 import Footer from "../../components/footer/Footer";
+import { useEffect, useState } from "react";
 
 
 
 const Home = () => {
+
   return (
     <div>
       <Nav/>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import qs from "qs";
 
 import Filter from "./../products/filter/Filter";
 
@@ -13,10 +12,10 @@ const Products = ({ products }) => {
         <div className={styles.products}>
           <Filter />
           <div className={styles.cards}>
-            {products.length > 0 ? (
+            {products && products.length > 0 ? (
               products.map(({ id, name, price, images }) => (
                 <Link
-                  to="/CardProduct"
+                  to={`/CardProduct?id=${id}`}
                   style={{ textDecoration: "none" }}
                   key={id}
                 >
