@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 
 import header from "./../../../assets/img/png/catalogHeadr.png";
-import wave from './../../../assets/img/png/wave.png'
+// import wave from './../../../assets/img/png/wave.png'
 
 const Header = ({menuName, categoryName}) => {
   return (

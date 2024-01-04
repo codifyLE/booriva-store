@@ -8,6 +8,7 @@ import Nav from "../../components/nav/Nav";
 import Insta from "../home/insta/Insta";
 import Button from "../../components/button/Button";
 import Slider from "./slider/Slider";
+import Fave from "../../components/fave/Fave";
 
 import cardImage from "./../../assets/img/png/cardImg.png";
 import icon from "./../../assets/img/svg/ord1.svg";
@@ -37,22 +38,10 @@ const CardProduct = () => {
       {data ?
       <section>
       <div className={styles.wrap}>
-       <Slider images={data.images}/>
-        {/* <div className={styles.images}>
-          <div className={styles.card__small}>
-            <img src={side} alt="" />
-            <img src={front} alt="" />
-            <img src={front2} alt="" />
-            <img src={back} alt="" />
-          </div>
-          <div className={styles.card}>
-            <Card
-              subtitle="Cвитшот вставка клетка"
-              price="1 099 ₴"
-              image={cardImage}
-            />
-          </div>
-        </div> */}
+      <div className={styles.items}>
+      <Slider images={data.images}/>
+       <Fave/>
+      </div>
         <div className={styles.title}>
           <div className={styles.subtitle}>
             <h2>{data.name}</h2>

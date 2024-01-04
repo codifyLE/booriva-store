@@ -30,7 +30,7 @@ const Nav = () => {
             </div>
           </div>
           <div className={styles.menu} >
-            <Menu/>
+            <Menu />
           </div>
         </section>
       </div>

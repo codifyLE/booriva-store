@@ -36,9 +36,14 @@
 .insta__items {
   margin-bottom: 10px;
 }
-.insta__items img{
-  width: 300px;
-  height: 93px;
+.insta__items h2{
+  color: #1F1F1F;
+  font-family: 'Sunday Best [rus by aLiNcE]';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .central {
   display: flex;
@@ -211,5 +216,40 @@
   }
   .central2 h2 {
     margin-top: 14px;
+
+  }
+ 
+}
+@media screen and(max-width: 400px) {
+  .central2{
+    width: 100%;
+  }
+  
+  .central2 h2 {
+    font-size: 24px;
+
+  }
+  .central2 span {
+    font-size: 16px;
+
+  }
+  .inst1 {
+    width: 135px;
+    height: 135px;
+  }
+  .inst2 {
+    width: 98px;
+    height: 98px;
+  }
+  .right__img1 {
+    width: 98px;
+    height: 98px;
+  }
+  .right__img2 {
+    width: 135px;
+    height: 135px;
+  }
+  .insta__items h2{
+    font-size: 30px;
   }
 }

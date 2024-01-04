@@ -1,13 +1,17 @@
 .cards{
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     flex-wrap: wrap;
-    max-width: 940px;
-    gap: 72px;
+    max-width: 950px;
+    gap: 30px;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        // gap: 30px;
 }
 .products{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: 60px;
 }
 .first .card{

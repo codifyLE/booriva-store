@@ -20,6 +20,7 @@ const Catalog = () => {
       .catch((rej) => console.log('error'));
   }, [location]);
   console.log(products)
+
   return (
     <div className="container">
       <Nav />

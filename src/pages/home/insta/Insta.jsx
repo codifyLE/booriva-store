@@ -16,7 +16,7 @@ const Insta = () => {
           <div className={styles.insta}>
             <div className={styles.left}>
               <div className={styles.insta__items}>
-                <img src={insta} alt="" />
+               <h2>Instagram</h2>
               </div>
               <span>
                 Мы в экстазе, когда ты нас отмечаешь) <br />

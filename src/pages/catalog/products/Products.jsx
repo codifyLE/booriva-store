@@ -25,6 +25,7 @@ const Products = ({ products }) => {
             ) : (
               <h2>товар не найден</h2>
             )}
+            {}
           </div>
         </div>
       </section>

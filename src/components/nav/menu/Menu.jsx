@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   const [menu, setMenu] = useState([]);
   const [menuId, setMenuId] = useState([]);
+ 
   useEffect(() => {
     fetch("https://640ef1d54ed25579dc40e2a6.mockapi.io/menu")
       .then((res) => res.json())
@@ -16,9 +17,10 @@ const Menu = () => {
       .then((res) => res.json())
       .then((data) => setMenuId(data.categories));
   };
+
   return (
     <div className={styles.menu}>
-      <div>
+      <div> 
         <ul>
           {menu.map(({ id, name }) => (
             <Link
@@ -26,7 +28,8 @@ const Menu = () => {
               style={{ textDecoration: "none" }}
               key={id}
             >
-              <li onMouseOver={() => handleMouseOver(id)}>{name}</li>
+              <li onMouseOver={() => handleMouseOver(id)}
+              >{name}</li>
             </Link>
           ))}
         </ul>
@@ -45,6 +48,7 @@ const Menu = () => {
             ))}
           </ul>
         )}
+
       </div>
     </div>
   );

@@ -1,7 +1,27 @@
 .news {
   margin-top: 60px;
   margin-bottom: 26px;
+  position: relative;
+  h2{
+    color: #FDA3C4;
+    font-family: 'Sunday Best [rus by aLiNcE]';
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400; 
 }
+  span{
+    position: absolute;
+    bottom: 5px;
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  } 
+}
+
 .cards {
   display: flex;
   justify-content: center;
@@ -10,24 +30,35 @@
   width: 100%;
   height: auto;
   padding: 0 32px;
+  
 }
-@media screen and(max-width: 1200px) {
-  .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 950px;
-    margin: auto;
-    gap: 72px;
-    align-items: end;
-    column-gap: 20px;
-    width: 100%;
-    height:  auto;
-    padding: 0 32px;
+@media screen and(max-width:  1250px) {
+  .cards :nth-child(4) {
+    display: none;
   }
 }
-// // @media screen and(max-width: 600px) {
-// //   .cards {
-// // display: inline-block;
-// //   }
-// // }
+@media screen and(max-width: 930px) { 
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .cards :nth-child(4) {
+    display: block;
+  }
+}
+
+@media (max-width: 710px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 510px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+  .news h2{
+    font-size: 34px;
+  }
+}

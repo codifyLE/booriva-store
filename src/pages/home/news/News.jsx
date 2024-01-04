@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Card from "../../../components/card/Card";
 import title from "./../../../assets/img/svg/Заголовок 1 новинки.svg";
+import wave from './../../../assets/img/svg/wave.svg'
 import Button from "../../../components/button/Button";
 
 import styles from "./News.module.scss";
@@ -13,7 +14,7 @@ const News = () => {
   useEffect(() => {
     fetch(`https://65588446e93ca47020a966c9.mockapi.io/menuCatalog?menuId=000`)
     .then((res) => res.json())
-    .then((data) => setNews(data[0].products.splice(0, 4)))
+    .then((data) => setNews(data[0].products.slice(0, 4)))
     .catch((rej) => console.log('error'));
 }, [])
      console.log(news)
@@ -21,7 +22,8 @@ const News = () => {
     <div className="container">
       <section>
         <div className={styles.news}>
-          <img src={title} alt="" />
+          <h2>Новинки</h2>
+          <span>Новинки <img src={wave} alt="" /></span>
         </div>
       </section>
       <div className={styles.cards}>
