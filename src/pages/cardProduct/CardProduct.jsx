@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import qs from 'qs'
 
 import Card from "../../components/card/Card";
@@ -19,6 +19,7 @@ import icon3 from "./../../assets/img/svg/ord3.svg";
 import styles from "./CardProduct.module.scss";
 
 const CardProduct = () => {
+  const [outwear, setOutwear] = useState([])
   const [data, setData] = useState(null)
   const location = useLocation()
    useEffect(() => {
@@ -29,6 +30,12 @@ const CardProduct = () => {
       .then((then) => setData(then))
     }
    }, [location])
+   useEffect(() => {
+    fetch(`https://65588446e93ca47020a966c9.mockapi.io/menuCatalog?menuId=002`)
+    .then((res) => res.json())
+    .then((data) => setOutwear(data[0].products.slice(0, 4)))
+    .catch((rej) => console.log('error'));
+}, [])
   return (
     <div className="container">
       <Nav />
@@ -96,26 +103,13 @@ const CardProduct = () => {
       </div>
     </section> : "Ошибка сети"}
       <div className={styles.cards}>
-        <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage}
-        />
-        <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage}
-        />
-        <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage}
-        />
-        <Card
-          subtitle="Cвитшот вставка клетка"
-          price="1 099 ₴"
-          image={cardImage}
-        />
+      {
+        outwear.map(({ id, name, price, images }) => (
+        <Link to={`/CardProduct?id=${id}`} style={{ textDecoration: "none" }} key={id}>
+        <Card subtitle={name} price={price} image={images} />
+       </Link>
+        ))
+      }
       </div>
       <Insta />
       <Footer />

@@ -4,6 +4,8 @@ import Filter from "./../products/filter/Filter";
 
 import Card from "./../../../components/card/Card";
 import styles from "./Products.module.scss";
+import { useEffect, useState } from "react";
+import News from "../../home/news/News";
 
 const Products = ({ products }) => {
   return (
@@ -19,7 +21,9 @@ const Products = ({ products }) => {
                   style={{ textDecoration: "none" }}
                   key={id}
                 >
-                <div className={styles.card}>  <Card subtitle={name} price={price} image={images[0]} /></div>
+                  <div className={styles.card}>
+                    <Card subtitle={name} price={price} image={images[0]} />
+                  </div>
                 </Link>
               ))
             ) : (
