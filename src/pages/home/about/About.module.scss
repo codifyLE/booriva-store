@@ -1,10 +1,10 @@
 .central {
-  margin: auto;
+  // margin: auto;
   max-width: 100%;
   width: 560px;
   height: 643px;
   position: relative;
-  margin-bottom: 180px;
+  // margin-bottom: 180px;
 }
 .central img {
   width: 100%;
@@ -45,17 +45,29 @@
   top: 380px;
   right: -250px;
 }
-@media screen and(max-width: 1185px) {
+.about{
+  display: flex;
+}
+.about__title{
+  color: #1F1F1F;
+  font-family: "Sunday Best [rus by aLiNcE]";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1185px) {
   .central {
-    margin: auto;
-    margin-bottom: 180px;
+    // margin: auto;
     width: 50%;
+    height: 100%;
   }
   .about__img {
     width: 60%;
   }
 }
-@media screen and(max-width: 1130px) {
+@media screen and (max-width: 1130px) {
   .description {
     position: absolute;
     bottom: 0px;
@@ -68,13 +80,13 @@
     left: -205px;
   }
 }
-@media screen and(max-width: 990px) {
+@media screen and (max-width: 990px) {
   .description {
     width: 200px;
     right: -220px;
   }
 }
-@media screen and(max-width: 850px) {
+@media screen and (max-width: 850px) {
   .description {
     position: static;
     bottom: 0px;
@@ -86,17 +98,19 @@
   }
   .central {
     margin-right: 0;
-    margin-bottom: 180px;
     width: 70%;
   }
   .adress {
-    position: absolute;
+    position: static;
     bottom: 40px;
 
-    width: 200px;
+    width: 100%;
+  }
+  .about__title{
+    font-size: 20px;
   }
 }
-@media screen and(max-width: 720px) {
+@media screen and (max-width: 720px) {
   .description {
     margin-left: 100px;
   }
@@ -107,23 +121,21 @@
     font-size: 12px;
   }
 }
-@media screen and(max-width: 720px) {
+@media screen and (max-width: 720px) {
   .description {
     margin: auto;
     width: 100%;
   }
   .adress {
     width: 100%;
-    position: static;
-    margin: auto;
   }
   .central {
     margin-bottom: 80px;
-    width: 80%;
+    width: 60%;
 
   }
   .central {
     
-    margin-bottom: 180px;
+    // margin-bottom: 180px;
   }
 }

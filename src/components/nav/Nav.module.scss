@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  // border-bottom: 1px solid #fda3c4;
+  border-bottom: 1px solid #fda3c4;
   width: 100%;
   background: #fff;
 }
@@ -18,20 +18,20 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and(max-width: 750px) {
+@media screen and (max-width: 750px) {
   .favourites{
     display: none;
   }
   .Nav{
     padding-bottom: 10px;
-      border-bottom: 1px solid #fda3c4;
+      // border-bottom: 1px solid #fda3c4;
   }
 
 }
 .navigation{
   z-index: 2;
   display: none;
-  border-top: 1px solid #fda3c4;
+  // border-top: 1px solid #fda3c4;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -50,7 +50,7 @@
 .icon img{
   margin-bottom: 5px;
 }
-@media screen and(max-width: 500px) {
+@media screen and (max-width: 500px) {
   .navigation{
     display: block;
   }

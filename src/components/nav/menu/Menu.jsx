@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
-  const [menuId, setMenuId] = useState([]);
+  const [subMenu, setSubMenu] = useState([]);
  
   useEffect(() => {
     fetch("https://640ef1d54ed25579dc40e2a6.mockapi.io/menu")
@@ -15,7 +15,7 @@ const Menu = () => {
   const handleMouseOver = (id) => {
     fetch(`https://640ef1d54ed25579dc40e2a6.mockapi.io/categories/a${id}`)
       .then((res) => res.json())
-      .then((data) => setMenuId(data.categories));
+      .then((data) => setSubMenu(data.categories));
   };
 
   return (
@@ -35,11 +35,11 @@ const Menu = () => {
         </ul>
       </div>
       <div className={styles.clothes}>
-        {menuId && menuId.length > 0 && (
+        {subMenu && subMenu.length > 0 && (
           <ul>
-            {menuId.map(({ id, name }) => (
+            {subMenu.map(({ id, name }) => (
               <Link
-                to={`/catalog?categories=${id}`}
+                to={`/catalog?categoriesId=${id}`}
                 key={id}
                 style={{ textDecoration: "none" }}
               >

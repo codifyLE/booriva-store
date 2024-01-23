@@ -97,7 +97,7 @@ footer {
 .social2{
   display: none;
 }
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 .logo{
   display: none;
 }
@@ -108,7 +108,7 @@ footer{
   padding: 40px 80px;
 }
 }
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
    .social{
     display: none;
    }
@@ -117,17 +117,17 @@ footer{
     column-gap: 15px;
    }
 }
-@media screen and(max-width: 760px) {
+@media screen and (max-width: 760px) {
   .about__us{
     flex-direction: column;
   }
 }
-@media screen and(max-width: 760px) {
+@media screen and (max-width: 760px) {
   footer{
     padding: 20px 60px;
   }
 }
-@media screen and(max-width: 560px) {
+@media screen and (max-width: 560px) {
   .items{
     flex-direction: column;
   }

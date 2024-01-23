@@ -17,6 +17,9 @@
         width: 301px;
         height: 230px;
     }
+    .title{
+        position: relative;
+    }
     .title h2{
         color: #FDA3C4;
         font-family: 'Sunday Best [rus by aLiNcE]';
@@ -25,6 +28,8 @@
         font-weight: 400;
     }
     .title span{
+        position: absolute;
+        bottom: 5px;
         color: #1F1F1F;
         font-family: 'Montserrat';
         font-size: 25px;
@@ -38,4 +43,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.orders {
+    margin: 60px 0 90px 0;
+    display: flex;
+    justify-content: space-between;
+    .order {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      h2 {
+        text-align: center;
+        color: #1f1f1f;
+        font-family: "Montserrat";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      span {
+        text-align: center;
+        margin-top: 8px;
+        color: #1f1f1f;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+@media screen and (max-width:950px) {
+    .orders{
+        flex-direction: column;
+    }
+    .order{
+        margin-bottom: 20px;
+    }
 }

@@ -7,6 +7,9 @@ const Card = ({ subtitle, price, image }) => {
 
       <div className={styles.cards}>
         <div className={`${styles.card} ${styles.card_2} ${styles.card_3}`}>
+        <div className={styles.fave}>
+    <Fave/>
+  </div>
      <div className={styles.card__img}>
      <img src={image} alt="" />
      </div>
@@ -16,9 +19,6 @@ const Card = ({ subtitle, price, image }) => {
       </div>
       <div>
    </div>
-  </div>
-  <div>
-    <Fave/>
   </div>
       </div>
   );

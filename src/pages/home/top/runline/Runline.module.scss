@@ -9,7 +9,7 @@
   }
   img {
     white-space: nowrap;
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -22,7 +22,7 @@
     transform: translateX(-50%);
   }
 }
-@media screen and(max-width: 650px) {
+@media screen and (max-width: 650px) {
   .runline {
     margin-top: 0;
   }

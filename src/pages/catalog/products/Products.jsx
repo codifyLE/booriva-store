@@ -19,7 +19,7 @@ const Products = ({ products }) => {
                   style={{ textDecoration: "none" }}
                   key={id}
                 >
-                  <Card subtitle={name} price={price} image={images[0]} />
+                <div className={styles.card}>  <Card subtitle={name} price={price} image={images[0]} /></div>
                 </Link>
               ))
             ) : (

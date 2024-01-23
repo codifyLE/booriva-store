@@ -14,10 +14,7 @@ import cardImage from "./../../assets/img/png/cardImg.png";
 import icon from "./../../assets/img/svg/ord1.svg";
 import icon2 from "./../../assets/img/svg/ord2.svg";
 import icon3 from "./../../assets/img/svg/ord3.svg";
-import side from "./../../assets/img/png/side.png";
-import front from "./../../assets/img/png/front.png";
-import front2 from "./../../assets/img/png/front2.png";
-import back from "./../../assets/img/png/back.png";
+
 
 import styles from "./CardProduct.module.scss";
 
@@ -40,7 +37,9 @@ const CardProduct = () => {
       <div className={styles.wrap}>
       <div className={styles.items}>
       <Slider images={data.images}/>
-       <Fave/>
+     <div className={styles.fave}>
+     <Fave/>
+     </div>
       </div>
         <div className={styles.title}>
           <div className={styles.subtitle}>

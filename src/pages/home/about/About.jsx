@@ -1,17 +1,18 @@
 import styles from "./About.module.scss";
 
 import aboutImg from "./../../../assets/img/png/about__img.png";
-import bvShop from "./../../../assets/img/svg/BOORIVA STORE.svg";
 
 const About = () => {
   return (
     <div className="container">
       <section>
+  <div className={styles.about}>
+  <div className={styles.about__title}>
+           <h2>BOORIVA <br /> STORE</h2>
+          </div>
         <div className={styles.central}>
           <img src={aboutImg} alt="" />
-          <div className={styles.about__img}>
-            <img src={bvShop} alt="" />
-          </div>
+
           <div className={styles.adress}>
             <span>
               г.Киев, ул. Нижний вал, 37 <br />
@@ -25,6 +26,7 @@ const About = () => {
             </span>
           </div>
         </div>
+  </div>
       </section>
     </div>
   );

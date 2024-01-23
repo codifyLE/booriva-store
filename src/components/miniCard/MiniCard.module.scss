@@ -9,6 +9,7 @@
     object-position: top;
   }
 }
+
 .cards {
   display: flex;
 }
@@ -33,7 +34,7 @@
   font-style: normal;
   font-weight: 600;
 }
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .card {
     width: 100%;
 

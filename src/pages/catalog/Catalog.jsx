@@ -14,10 +14,18 @@ const Catalog = () => {
   const location = useLocation()
   useEffect(() => {
  const params = qs.parse(location.search.substring(1))
-    fetch(`https://65588446e93ca47020a966c9.mockapi.io/menuCatalog?menuId=${params.menuId}`)
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((rej) => console.log('error'));
+ if(params.menuId){
+  fetch(`https://65588446e93ca47020a966c9.mockapi.io/menuCatalog?menuId=${params.menuId}`)
+  .then((res) => res.json())
+  .then((data) => setProducts(data))
+  .catch((rej) => console.log('error'));
+ }
+ if(params.categoriesId){
+  fetch(`https://65588446e93ca47020a966c9.mockapi.io/categoriesCatalog?categoryId=${params.categoriesId}`)
+  .then((res) => res.json())
+  .then((data) => setProducts(data))
+  .catch((rej) => console.log('error'));
+ }
   }, [location]);
   console.log(products)
 

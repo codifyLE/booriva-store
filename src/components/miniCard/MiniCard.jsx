@@ -13,7 +13,7 @@ const MiniCard = ({ subtitle, price, image }) => {
           <span className={styles.price}>{price}</span>
         </div>
       </div>
-      <div>
+      <div className={styles.fave}>
         <Fave />
       </div>
     </div>
