@@ -19,9 +19,13 @@ const Catalog = () => {
   .then((res) => res.json())
   .then((data) => setProducts(data))
   .catch((rej) => console.log('error'));
- }
- if(params.categoriesId){
+ }else if(params.categoriesId){
   fetch(`https://65588446e93ca47020a966c9.mockapi.io/categoriesCatalog?categoryId=${params.categoriesId}`)
+  .then((res) => res.json())
+  .then((data) => setProducts(data))
+  .catch((rej) => console.log('error'));
+ }else{
+  fetch(`https://6569c6cede53105b0dd7a33a.mockapi.io/product`)
   .then((res) => res.json())
   .then((data) => setProducts(data))
   .catch((rej) => console.log('error'));

@@ -8,11 +8,11 @@ const Contacts = () => {
         <div className={styles.contacts}>
         <div className={styles.adress}>
         <img src={location} alt="" className={styles.location__icon} />
-        <span> Киев, Нижний вал, 37</span>
+        <a href='https://yandex.ru/maps/-/CDuLi84H'> Грозный, проспект Кадырова 216</a>
         </div>
         <div className={styles.phone}>
         <img src={phone} alt="" className={styles.phone__icon}/>
-        <span>+38 063 843 34 71</span>
+        <a href='tel:+7839847436'>+7 839 847 43 66</a>
         </div>
         </div>
     )

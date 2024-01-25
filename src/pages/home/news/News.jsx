@@ -36,7 +36,7 @@ const News = () => {
         ))
       }
       </div>
-      <Button />
+     <Link to={'/catalog'}> <Button /></Link>
     </div>
   );
 };

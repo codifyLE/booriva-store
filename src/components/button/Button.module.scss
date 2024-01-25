@@ -23,7 +23,9 @@ button{
         text-transform: uppercase;
     }
 }
+.btn svg path{
+    transition: 0.3s;
+}
 .btn:hover svg path{
-    transition: all 0.3s;
     fill: #F40000;
 }
