@@ -4,10 +4,10 @@ import Filter from "./../products/filter/Filter";
 
 import Card from "./../../../components/card/Card";
 import styles from "./Products.module.scss";
-import { useEffect, useState } from "react";
 import News from "../../home/news/News";
+import Fave from "../../../components/fave/Fave";
 
-const Products = ({ products }) => {
+const Products = ({ products, favourites, setFavourites }) => {
   return (
     <div className="container">
       <section>
@@ -16,15 +16,17 @@ const Products = ({ products }) => {
           <div className={styles.cards}>
             {products && products.length > 0 ? (
               products.map(({ id, name, price, images }) => (
-                <Link
+                <div key={id} className={styles.card__wrap}>
+                         <Link
                   to={`/CardProduct?id=${id}`}
                   style={{ textDecoration: "none" }}
-                  key={id}
                 >
                   <div className={styles.card}>
-                    <Card subtitle={name} price={price} image={images[0]} />
+                    <Card subtitle={name} price={price} image={images[0]} setFavourites={setFavourites} favourites={favourites} id={id} />
                   </div>
                 </Link>
+                <Fave setFavourites={setFavourites} favourites={favourites} id={id} />
+                </div>
               ))
             ) : (
               <h2>товар не найден</h2>

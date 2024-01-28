@@ -9,7 +9,7 @@ import styles from "./Catalog.module.scss";
 import Header from "./header/Header";
 import Products from "./products/Products";
 
-const Catalog = () => {
+const Catalog = ({favourites, setFavourites}) => {
   const [products, setProducts] = useState([]);
   const location = useLocation()
   useEffect(() => {
@@ -25,7 +25,7 @@ const Catalog = () => {
   .then((data) => setProducts(data))
   .catch((rej) => console.log('error'));
  }else{
-  fetch(`https://6569c6cede53105b0dd7a33a.mockapi.io/product`)
+  fetch(`https://65588446e93ca47020a966c9.mockapi.io/menuCatalog?menuId=000`)
   .then((res) => res.json())
   .then((data) => setProducts(data))
   .catch((rej) => console.log('error'));
@@ -39,7 +39,7 @@ const Catalog = () => {
       <Header menuName={products.length > 0 ? products[0].menuName : ''}
       categoryName={products.length > 0 ? products[0].categoryName : ''}      
       />
-      <Products products={products.length > 0 ? products[0].products : []} />
+      <Products products={products.length > 0 ? products[0].products : []}  setFavourites={setFavourites} favourites={favourites} />
       <Insta />
       <Footer />
     </div>

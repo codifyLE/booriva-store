@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 
 import header from "./../../../assets/img/png/catalogHeadr.png";
-import wave from './../../../assets/img/svg/wave.svg'
+// import wave from './../../../assets/img/svg/wave.svg'<img src={wave} alt="" />
 
 const Header = ({menuName, categoryName}) => {
   return (
@@ -9,7 +9,7 @@ const Header = ({menuName, categoryName}) => {
       <section>
         <header>
           <h2>{menuName}</h2>
-          <span>{categoryName} <img src={wave} alt="" /></span>
+          <span>{categoryName} </span>
           <div className={styles.image}>
             <img src={header} alt="" />
           </div>

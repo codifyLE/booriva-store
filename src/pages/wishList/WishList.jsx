@@ -11,9 +11,20 @@ import icon2 from "./../../assets/img/svg/ord2.svg";
 import icon3 from "./../../assets/img/svg/made.svg";
 
 import styles from './WishList.module.scss'
+import { useEffect, useState } from "react";
 {/* <img src={wave} alt="" /> */}
 
-const WishList = () => {
+const WishList = ({favourites, setFavourites}) => {
+  
+  // const [products, setProducts] = useState([])
+  // useEffect(() => {
+  //    products.forEach((id) => {
+  //     fetch(`https://6569c6cede53105b0dd7a33a.mockapi.io/product/${id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data))
+  //    })
+  // }, [favourites])
+
     return(
         <div className={styles.wrap}>
             <Nav/>
@@ -61,6 +72,9 @@ const WishList = () => {
         </div>
       </div>
             </section>
+            <div className={styles.cards}>
+             
+            </div>
             <Insta />
             <Footer />
         </div>
